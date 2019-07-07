@@ -38,7 +38,7 @@ var EPS = 0.000001;
 *    Zoom - middle mouse, or mousewheel / touch: two finger spread or squish
 *    Pan - right mouse, or arrow keys / touch: three finger swipe
 */
-var OrbitControls = (function (_super) {
+var OrbitControls = /** @class */ (function (_super) {
     __extends(OrbitControls, _super);
     function OrbitControls(object, domElement, domWindow) {
         var _this = _super.call(this) || this;

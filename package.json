@@ -1,7 +1,7 @@
 {
-  "name": "three-orbitcontrols-ts",
+  "name": "three-orbitcontrols-ts-zbyso23",
   "version": "0.1.2",
-  "description": "ThreeJS OrbitControls as a standalone and typescript compatible npm module",
+  "description": "ThreeJS OrbitControls as a standalone and typescript compatible npm module - forked version zbyso23",
   "main": "dist",
   "scripts": {
     "preversion": "npm test && ./node_modules/typescript/bin/tsc -p tsconfig.json",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolaspanel/three-orbitcontrols-ts.git"
+    "url": "git+https://github.com/zbyso23/three-orbitcontrols-ts.git"
   },
   "author": "",
   "license": "MIT",
@@ -24,9 +24,9 @@
     "controller"
   ],
   "bugs": {
-    "url": "https://github.com/nicolaspanel/three-orbitcontrols-ts/issues"
+    "url": "https://github.com/zbyso23/three-orbitcontrols-ts/issues"
   },
-  "homepage": "https://github.com/nicolaspanel/three-orbitcontrols-ts#readme",
+  "homepage": "https://github.com/zbyso23/three-orbitcontrols-ts#readme",
   "peerDependencies": {
     "three": "^0.94.0"
   },

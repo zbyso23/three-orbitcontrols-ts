@@ -49,41 +49,41 @@ export declare class OrbitControls extends THREE.EventDispatcher {
     };
     enableDamping: boolean;
     dampingFactor: number;
-    private spherical;
-    private sphericalDelta;
-    private scale;
-    private target0;
-    private position0;
-    private zoom0;
-    private state;
-    private panOffset;
-    private zoomChanged;
-    private rotateStart;
-    private rotateEnd;
-    private rotateDelta;
-    private panStart;
-    private panEnd;
-    private panDelta;
-    private dollyStart;
-    private dollyEnd;
-    private dollyDelta;
-    private updateLastPosition;
-    private updateOffset;
-    private updateQuat;
-    private updateLastQuaternion;
-    private updateQuatInverse;
-    private panLeftV;
-    private panUpV;
-    private panInternalOffset;
-    private onContextMenu;
-    private onMouseUp;
-    private onMouseDown;
-    private onMouseMove;
-    private onMouseWheel;
-    private onTouchStart;
-    private onTouchEnd;
-    private onTouchMove;
-    private onKeyDown;
+    protected spherical: THREE.Spherical;
+    protected sphericalDelta: THREE.Spherical;
+    protected scale: number;
+    protected target0: THREE.Vector3;
+    protected position0: THREE.Vector3;
+    protected zoom0: any;
+    protected state: number;
+    protected panOffset: THREE.Vector3;
+    protected zoomChanged: boolean;
+    protected rotateStart: THREE.Vector2;
+    protected rotateEnd: THREE.Vector2;
+    protected rotateDelta: THREE.Vector2;
+    protected panStart: THREE.Vector2;
+    protected panEnd: THREE.Vector2;
+    protected panDelta: THREE.Vector2;
+    protected dollyStart: THREE.Vector2;
+    protected dollyEnd: THREE.Vector2;
+    protected dollyDelta: THREE.Vector2;
+    protected updateLastPosition: THREE.Vector3;
+    protected updateOffset: THREE.Vector3;
+    protected updateQuat: THREE.Quaternion;
+    protected updateLastQuaternion: THREE.Quaternion;
+    protected updateQuatInverse: THREE.Quaternion;
+    protected panLeftV: THREE.Vector3;
+    protected panUpV: THREE.Vector3;
+    protected panInternalOffset: THREE.Vector3;
+    protected onContextMenu: EventListener;
+    protected onMouseUp: EventListener;
+    protected onMouseDown: EventListener;
+    protected onMouseMove: EventListener;
+    protected onMouseWheel: EventListener;
+    protected onTouchStart: EventListener;
+    protected onTouchEnd: EventListener;
+    protected onTouchMove: EventListener;
+    protected onKeyDown: EventListener;
     constructor(object: THREE.Camera, domElement?: HTMLElement, domWindow?: Window);
     update(): boolean;
     panLeft(distance: number, objectMatrix: any): void;
@@ -107,11 +107,11 @@ export declare class OrbitControls extends THREE.EventDispatcher {
      * If the check passes (returns true) the passed camera will have the type THREE.PerspectiveCamera in the if branch where the check was performed.
      * @param camera Object to be checked.
      */
-    private _checkPerspectiveCamera(camera);
+    private _checkPerspectiveCamera;
     /**
      * TS typeguard. Checks whether the provided camera is OrthographicCamera.
      * If the check passes (returns true) the passed camera will have the type THREE.OrthographicCamera in the if branch where the check was performed.
      * @param camera Object to be checked.
      */
-    private _checkOrthographicCamera(camera);
+    private _checkOrthographicCamera;
 }

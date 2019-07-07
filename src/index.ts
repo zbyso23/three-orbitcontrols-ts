@@ -60,47 +60,47 @@ export class OrbitControls extends THREE.EventDispatcher {
   enableDamping: boolean;
   dampingFactor: number;
 
-  private spherical: THREE.Spherical;
-  private sphericalDelta: THREE.Spherical;
-  private scale: number;
-  private target0: THREE.Vector3;
-  private position0: THREE.Vector3;
-  private zoom0: any;
-  private state: number;
-  private panOffset: THREE.Vector3;
-  private zoomChanged: boolean;
+  protected spherical: THREE.Spherical;
+  protected sphericalDelta: THREE.Spherical;
+  protected scale: number;
+  protected target0: THREE.Vector3;
+  protected position0: THREE.Vector3;
+  protected zoom0: any;
+  protected state: number;
+  protected panOffset: THREE.Vector3;
+  protected zoomChanged: boolean;
 
-  private rotateStart: THREE.Vector2;
-  private rotateEnd: THREE.Vector2;
-  private rotateDelta: THREE.Vector2
+  protected rotateStart: THREE.Vector2;
+  protected rotateEnd: THREE.Vector2;
+  protected rotateDelta: THREE.Vector2
 
-  private panStart: THREE.Vector2;
-  private panEnd: THREE.Vector2;
-  private panDelta: THREE.Vector2;
+  protected panStart: THREE.Vector2;
+  protected panEnd: THREE.Vector2;
+  protected panDelta: THREE.Vector2;
 
-  private dollyStart: THREE.Vector2;
-  private dollyEnd: THREE.Vector2;
-  private dollyDelta: THREE.Vector2;
+  protected dollyStart: THREE.Vector2;
+  protected dollyEnd: THREE.Vector2;
+  protected dollyDelta: THREE.Vector2;
 
-  private updateLastPosition: THREE.Vector3;
-  private updateOffset: THREE.Vector3;
-  private updateQuat: THREE.Quaternion;
-  private updateLastQuaternion: THREE.Quaternion;
-  private updateQuatInverse: THREE.Quaternion;
+  protected updateLastPosition: THREE.Vector3;
+  protected updateOffset: THREE.Vector3;
+  protected updateQuat: THREE.Quaternion;
+  protected updateLastQuaternion: THREE.Quaternion;
+  protected updateQuatInverse: THREE.Quaternion;
 
-  private panLeftV: THREE.Vector3;
-  private panUpV: THREE.Vector3;
-  private panInternalOffset: THREE.Vector3;
+  protected panLeftV: THREE.Vector3;
+  protected panUpV: THREE.Vector3;
+  protected panInternalOffset: THREE.Vector3;
 
-  private onContextMenu: EventListener;
-  private onMouseUp: EventListener;
-  private onMouseDown: EventListener;
-  private onMouseMove: EventListener;
-  private onMouseWheel: EventListener;
-  private onTouchStart: EventListener;
-  private onTouchEnd: EventListener;
-  private onTouchMove: EventListener;
-  private onKeyDown: EventListener;
+  protected onContextMenu: EventListener;
+  protected onMouseUp: EventListener;
+  protected onMouseDown: EventListener;
+  protected onMouseMove: EventListener;
+  protected onMouseWheel: EventListener;
+  protected onTouchStart: EventListener;
+  protected onTouchEnd: EventListener;
+  protected onTouchMove: EventListener;
+  protected onKeyDown: EventListener;
 
   constructor (object: THREE.Camera, domElement?: HTMLElement, domWindow?: Window) {
     super();

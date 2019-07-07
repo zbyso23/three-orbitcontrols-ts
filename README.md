@@ -1,5 +1,9 @@
 ThreeJS OrbitControls as a standalone and typescript compatible npm module.
 
+Forked for Game usage from [https://github.com/nicolaspanel/three-orbitcontrols-ts](https://github.com/nicolaspanel/three-orbitcontrols-ts)
+
+
+
 # Installation
 ```shell
 npm install --save three-orbitcontrols-ts
@@ -34,3 +38,7 @@ controls.dampingFactor = 0.25;
 
 # Credit
 All credit goes to [OrbitControls.js](https://github.com/mrdoob/three.js/blob/master/examples/js/controls/OrbitControls.js) contributors.
+
+# Changes
+
+* private property to protected for extends class
